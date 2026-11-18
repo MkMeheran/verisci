@@ -1,0 +1,13 @@
+
+id: task_00_starter
+domain: earth_climate
+trap: missing_value_sentinel_and_window_completeness
+difficulty: easy
+title: Maximum Rolling Five-Day Precipitation
+function: rolling_5day_max_precip
+units: mm
+window_days: 5
+missing_value_sentinel: -999.0
+missing_value_rule: negative_values_and_nan_are_missing
+window_rule: all_five_days_must_be_valid
+expected_error: ValueError
